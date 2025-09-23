@@ -1,25 +1,32 @@
-End-to-End Data Pipeline with dlt, AWS, and Orchestration
+# End-to-End Data Pipeline with dlt, AWS, and Orchestration
 📌 Project Overview
 
-This project demonstrates the design and implementation of an end-to-end data pipeline using dlt , a modern data loading framework. The pipeline extracts raw data from external APIs, applies transformations such as schema normalization and type handling, and loads the processed data into multiple destinations including MySQL, AWS S3, and a data warehouse with Apache Iceberg for partitioning.
+This project demonstrates the design and implementation of an end-to-end data pipeline using dlt
+, a modern data loading framework. The pipeline extracts raw data from external APIs, applies transformations such as schema normalization and type handling, and loads the processed data into multiple destinations including MySQL, AWS S3, and a data warehouse with Apache Iceberg for partitioning.
 
 The project emphasizes scalability, reliability, and automation, incorporating performance tuning techniques and modern orchestration tools like GitHub Actions and Apache Airflow.
 
-image
-🚀 Key Features
-API Data Extraction
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/eb96fd1a-df8b-4e90-859a-4896a2dc23bd" />
+
+
+# 🚀 Key Features
+
+# API Data Extraction
+
 Used dlt resources for secure API ingestion with configuration and secrets management.
 
 Supported both full batch and incremental data loads.
 
-Schema Normalization & Evolution
+# Schema Normalization & Evolution
+
 Automatic schema detection and type conversions.
 
 Flattening nested JSON structures into relational tables.
 
 Implemented data contracts to detect and alert schema changes from source systems.
 
-Data Loading & Storage
+# Data Loading & Storage
+
 Ingested data into inbuilt SQLAlchemy DB, later migrated to MySQL.
 
 Optimized for both batch and incremental updates.
@@ -30,23 +37,32 @@ Leveraged Apache Iceberg for partitioning and efficient querying.
 
 Integrated downstream loading into a data warehouse for analytics.
 
-Performance Optimization
+# Performance Optimization
+
 Implemented parallelism and asynchronous API requests for faster ingestion.
 
 Applied memory management techniques to handle large-scale datasets.
 
-Orchestration & Deployment
+# Orchestration & Deployment
+
 Automated pipeline runs with GitHub Actions (CI/CD).
 
 Scheduled and monitored workflows using Apache Airflow.
 
-🛠️ Tech Stack
-Languages & Frameworks: Python, dlt, SQLAlchemy
-Databases: MySQL
-Cloud & Storage: AWS S3, AWS Glue, Apache Iceberg, PySpark, Redshift
-Orchestration & CI/CD: Apache Airflow, GitHub Actions
-Other Tools: Pandas, NumPy, Asyncio, Requests
-⚡ How It Works
+# 🛠️ Tech Stack
+
+# Languages & Frameworks: Python, dlt, SQLAlchemy
+
+# Databases: MySQL
+
+# Cloud & Storage: AWS S3, AWS Glue, Apache Iceberg, PySpark, Redshift 
+
+# Orchestration & CI/CD: Apache Airflow, GitHub Actions
+
+# Other Tools: Pandas, NumPy, Asyncio, Requests
+
+# ⚡ How It Works
+
 Extraction: Data pulled from APIs with dlt using secure configs/secrets.
 
 Transformation: Schema auto-detection, flattening nested JSON, handling type mismatches, and triggering schema evolution alerts.
@@ -57,7 +73,8 @@ Performance Tuning: Applied async requests and parallelism to improve ingestion 
 
 Orchestration: GitHub Actions handles CI/CD, while Airflow schedules recurring ingestion jobs.
 
-📊 Outcomes
+# 📊 Outcomes
+
 Automated end-to-end ELT pipeline with scalable design.
 
 Reduced manual schema management with data contract + evolution alerts.
@@ -68,7 +85,8 @@ Enabled analytics-ready storage via partitioned Iceberg tables in a cloud data l
 
 Showcased CI/CD best practices and workflow orchestration for production readiness.
 
-🎯 Skills Demonstrated
+# 🎯 Skills Demonstrated
+
 Data Engineering: ETL/ELT pipelines, schema evolution, data lake/warehouse integration
 
 Big Data: AWS Glue, S3, Iceberg partitioning
