@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Ash Ketchum",
+    "age": 10,
+    "location": {
+      "city": "Pallet Town",
+      "region": "Kanto"
+    },
+    "pokemon": [
+      {
+        "id": 25,
+        "name": "Pikachu",
+        "type": ["Electric"],
+        "level": 35
+      },
+      {
+        "id": 1,
+        "name": "Bulbasaur",
+        "type": ["Grass", "Poison"],
+        "level": 20
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Misty",
+    "age": 12,
+    "location": {
+      "city": "Cerulean City",
+      "region": "Kanto"
+    },
+    "pokemon": [
+      {
+        "id": 120,
+        "name": "Staryu",
+        "type": ["Water"],
+        "level": 28
+      },
+      {
+        "id": 121,
+        "name": "Starmie",
+        "type": ["Water", "Psychic"],
+        "level": 32
+      }
+    ]
+  }
+]
